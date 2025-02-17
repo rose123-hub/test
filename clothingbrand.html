@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+            color: #333;
+            overflow-x: hidden;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f2a365;
+            transform: translateY(-3px);
+        }
+
+        /* Smooth Menu Sections */
+        main {
+            padding: 20px 0;
+        }
+
+        section {
+            margin-bottom: 30px;
+            background-color: #fff;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #222;
+            margin-bottom: 15px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-top: 15px;
+            padding-left: 10px;
+        }
+
+        ul li {
+            font-size: 1.1rem;
+            color: #555;
+            margin: 8px 0;
+            transition: transform 0.2s ease, color 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        ul li:hover {
+            color: #f2a365;
+            transform: translateX(5px);
+        }
+
+        /* Image Styling */
+.menu-image {
+    max-width: 800px; /* Adjust this to your preferred maximum size */
+    width: 100%; /* Makes it responsive */
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+        .menu-image:hover {
+            transform: scale(1.03);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0 -6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        footer p {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>SAVOUR OF FLAVOR</h1>
+            <nav>
+                <ul>
+                    <li><a href="#breakfast">Breakfast</a></li>
+                    <li><a href="#lunch">Lunch</a></li>
+                    <li><a href="#dinner">Dinner</a></li>
+                    <li><a href="#beverages">Beverages</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="breakfast">
+            <h2>Breakfast</h2>
+            <img class="menu-image" src="breakfast.png" alt="Breakfast">
+            <ul>
+                <li>Continental Breakfast - Rs 315</li>
+                <li>English Breakfast - Rs 420</li>
+                <li>Pancakes with Syrup - Rs 212</li>
+            </ul>
+        </section>
+
+        <section id="lunch">
+            <h2>Lunch</h2>
+            <img class="menu-image" src="photocollage.png" alt="Lunch">
+            <ul>
+                <li>Caesar Salad - Rs 312</li>
+                <li>Grilled Chicken Sandwich - Rs 414</li>
+                <li>Vegetarian Burger - Rs 313</li>
+            </ul>
+        </section>
+
+        <section id="dinner">
+            <h2>Dinner</h2>
+            <img class="menu-image" src="dinner.png" alt="Dinner">
+            <ul>
+                <li>Steak with Mashed Potatoes - Rs 430</li>
+                <li>Salmon with Veggies - Rs 628</li>
+                <li>Vegetable Stir-fry - Rs 322</li>
+            </ul>
+        </section>
+
+        <section id="beverages">
+            <h2>Beverages</h2>
+            <img class="menu-image" src="beverage.jpg" alt="Beverages">
+            <ul>
+                <li>Coffee - Rs 103</li>
+                <li>Matcha - Rs 243</li>
+                <li>Fresh Juice - Rs 95</li>
+                <li>Mocktail - Rs 112</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Our Hotel. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
